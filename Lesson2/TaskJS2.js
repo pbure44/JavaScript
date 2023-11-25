@@ -52,52 +52,52 @@ let book6 = {
 console.log('------------------------------')
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 let users = [
-  user1 = {
+  {
     name: 'Viktoria',
     username: 'CyberWhite',
     password: '1-yn8X6C9Q',
   },
-  user2 = {
+  {
     name: 'Dariya',
     username: 'BestRiku',
     password: '2-6n8E7UN8',
   },
-  user3 = {
+  {
     name: 'Mykhaylo',
     username: 'UraniumDog',
     password: '3-P2ppz75h'
   },
-  user4 = {
+  {
     name: 'Vsevolod',
     username: 'XNever',
     password: '4-V8s86tWw'
   },
-  user5 = {
+  {
     name: 'Bohdan',
     username: 'CookieSnake',
     password: '5-E4ha54Fs'
   },
-  user6 = {
+  {
     name: 'Yaroslav',
     username: 'GeekBlood',
     password: '6-j6Z58Rjc'
   },
-  user7 = {
+  {
     name: 'Maksym',
     username: 'CaptainCar',
     password: '7-Fg884vv9'
   },
-  user8 = {
+  {
     name: 'Julia',
     username: 'SapphireFish',
     password: '8-3W4m5Vsq'
   },
-  user9 = {
+  {
     name: 'Lexi',
     username: 'RealityTwo',
     password: '9-At963kNN'
   },
-  user10 = {
+  {
     name: 'Nataliya',
     username: 'GoldLuck',
     password: '10-5Uy8WTz6'
@@ -181,12 +181,58 @@ switch (weekDay) {
   default:
     console.log('Введено невірне число, введіть від 1 до 7 включно')
 }
+console.log('------------------------------')
 //   - Користувач вводить або має два числа.
 //     Потрібно знайти та вивести максимальне число з тих двох .
 //     Також потрібно врахувати коли введені рівні числа.
-//
+
+let num1 = +prompt("Введіть перше число");
+let num2 = +prompt("Введіть друге число");
+console.log("Введено числа: "+num1+" та "+num2);
+if (num1>num2){
+  console.log("Перше число більше другого");
+}else if (num1<num2){
+  console.log("Друге число більше першого");
+}else {
+  console.log("Перше число дорівнює другому");
+}
+console.log('------------------------------')
+
 //   - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
-//
-//
+let x;
+if (x){
+}else {
+  x="default";
+}
+console.log(x)
+console.log('------------------------------')
+
 //   - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+let coursesAndDurationArray = [
+  {title: 'JavaScript Complex', monthDuration: 5},
+  {title: 'Java Complex', monthDuration: 6},
+  {title: 'Python Complex', monthDuration: 6},
+  {title: 'QA Complex', monthDuration: 4},
+  {title: 'FullStack', monthDuration: 7},
+  {title: 'Frontend', monthDuration: 4}
+];
+if (coursesAndDurationArray[0].monthDuration>5){
+  console.log("Супер");
+}
+if (coursesAndDurationArray[1].monthDuration>5){
+  console.log("Супер");
+}
+if (coursesAndDurationArray[2].monthDuration>5){
+  console.log("Супер");
+}
+if (coursesAndDurationArray[3].monthDuration>5){
+  console.log("Супер");
+}
+if (coursesAndDurationArray[4].monthDuration>5){
+  console.log("Супер");
+}
+if (coursesAndDurationArray[5].monthDuration>5){
+  console.log("Супер");
+}
+
