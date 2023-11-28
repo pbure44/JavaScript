@@ -186,17 +186,17 @@ console.log('------------------------------')
 //     Потрібно знайти та вивести максимальне число з тих двох .
 //     Також потрібно врахувати коли введені рівні числа.
 
-let num1 = +prompt("Введіть перше число");
-let num2 = +prompt("Введіть друге число");
-console.log("Введено числа: "+num1+" та "+num2);
-if (num1>num2){
-  console.log("Перше число більше другого");
-}else if (num1<num2){
-  console.log("Друге число більше першого");
-}else {
-  console.log("Перше число дорівнює другому");
-}
-console.log('------------------------------')
+// let num1 = +prompt("Введіть перше число");
+// let num2 = +prompt("Введіть друге число");
+// console.log("Введено числа: "+num1+" та "+num2);
+// if (num1>num2){
+//   console.log("Перше число більше другого");
+// }else if (num1<num2){
+//   console.log("Друге число більше першого");
+// }else {
+//   console.log("Перше число дорівнює другому");
+// }
+// console.log('------------------------------')
 
 //   - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
@@ -205,8 +205,8 @@ if (x){
 }else {
   x="default";
 }
-console.log(x)
-console.log('------------------------------')
+console.log(x);
+console.log('------------------------------');
 
 //   - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 let coursesAndDurationArray = [
@@ -235,4 +235,18 @@ if (coursesAndDurationArray[4].monthDuration>5){
 if (coursesAndDurationArray[5].monthDuration>5){
   console.log("Супер");
 }
+console.log('------------------------------')
+let z=5;
+z>8?console.log("Більше"):console.log("Менше")
 
+switch (z){
+  case (z<5):
+    console.log("Less than 5");
+    break;
+  case (5):
+    console.log("Equals 5");
+    break;
+  case (z>5):
+    console.log("more than 5");
+    break;
+}
