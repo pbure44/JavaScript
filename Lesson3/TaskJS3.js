@@ -106,23 +106,24 @@ let users = [
 ];
 // за допомоги циклу вивести:
 //   - користувачів зі статусом true
-
+document.write('<ul>');
 for (const user of users) {
   if(user.status) {
-    document.write(`<ul><li>${user.name} (status: ${user.status})</li></ul>`);
+    document.write(`<li>${user.name} (status: ${user.status})</li>`);
   }
 }
 document.write('<h1>***********</h1>');
 // - користувачів зі статусом false
 for (const user of users) {
   if(!user.status){
-    document.write(`<ul><li>${user.name} (status: ${user.status})</li></ul>`);
+    document.write(`<li>${user.name} (status: ${user.status})</li>`);
   }
 }
 document.write('<h1>***********</h1>');
 // - користувачів які старші за 30 років
 for(const user of users){
   if(user.age>30){
-    document.write(`<ul><li>${user.name} (age: ${user.age})</li></ul>`)
+    document.write(`<li>${user.name} (age: ${user.age})</li>`)
   }
 }
+document.write('</ul>');
