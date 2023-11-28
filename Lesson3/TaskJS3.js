@@ -40,9 +40,12 @@ document.write('<h1>----------------------------------</h1>');
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 
+document.write('<ul>');
 for (const listOfItem of listOfItems) {
-  document.write(`<h3><ul><li>${listOfItem}</li></ul></h3>`);
+  document.write(`<li>${listOfItem}</li>`);
 }
+document.write('</ul>');
+
 document.write('<h1>----------------------------------</h1>');
 
 // Використовуючи данні з масиву, за допомоги document.write та циклу
