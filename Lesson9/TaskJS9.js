@@ -5,10 +5,7 @@
 // - клонувати його повністю, та додати клон в body.
 console.log(document);
 let newDiv = document.createElement("div");
-newDiv.classList.add("wrap");
-newDiv.classList.add("collapse");
-newDiv.classList.add("alpha");
-newDiv.classList.add("beta");
+newDiv.classList.add("wrap", "collapse", "alpha", "beta");
 newDiv.innerText = 'Hello, I was created by JS';
 newDiv.style.cssText = 'position:relative;width:50%;height:50%;opacity:1;background:#c4c1e0;';
 newDiv.style.fontSize = "25px";
@@ -57,8 +54,7 @@ for (const element of coursesAndDurationArray) {
   let newParagraph = document.createElement("p");
   newParagraph.classList.add('description');
   newParagraph.innerText = element.monthDuration;
-  newDiv.appendChild(newH1);
-  newDiv.appendChild(newParagraph);
+  newDiv.append(newH1, newParagraph);
   document.body.appendChild(newDiv);
 }
 
@@ -124,13 +120,9 @@ for (const simpson of simpsons) {
                         // newUL.appendChild(photoLi);
   let photo = new Image();
   photo.src=simpson.photo;
-  newUL.appendChild(photo);
-  newUL.appendChild(nameLi);
-  newUL.appendChild(surnameLi);
-  newUL.appendChild(ageLi);
-  newUL.appendChild(infoLi);
-  newDiv.appendChild(newUL);
-  document.body.appendChild(newDiv);
+  newUL.append(photo, nameLi, surnameLi, ageLi, infoLi);
+  newDiv.append(newUL);
+  document.body.append(newDiv);
 }
 
 document.write('--------------------------------------');
